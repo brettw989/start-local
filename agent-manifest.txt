@@ -13,5 +13,6 @@
 ./tests/install_with_env_variables.sh
 ./tests/install_with_version_test.sh
 ./tests/start_stop_test.sh
+./tests/uninstall_edot_test.sh
 ./tests/uninstall_test.sh
 ./tests/utility.sh
