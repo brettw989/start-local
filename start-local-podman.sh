@@ -1441,7 +1441,7 @@ main() {
   fi
 
   if [ -n "${EDOT_LOCAL_CONTAINER_NAME:-}" ]; then
-    echo "- docker.elastic.co/elastic-agent/elastic-edot-collector:${ES_LOCAL_VERSION}"
+    echo "- docker.elastic.co/elastic-agent/elastic-otel-collector:${ES_LOCAL_VERSION}"
   fi
 
   if ! ask_confirmation; then
@@ -1534,7 +1534,7 @@ success() {
   fi
 
   # Load ES_LOCAL_API_KEY environment variable.
-  . "$installation_folder/.env"
+  . ./.env
 
   if [ -n "$ES_LOCAL_API_KEY" ]; then
     echo "🔑 API key: $ES_LOCAL_API_KEY"
